@@ -1,0 +1,40 @@
+dataset="Physics"
+datadir="../../datasets/"
+log_dir="./log/logPhysics.txt"
+GPU_ID=(0)
+seed=(66666)
+
+nb_epochs=(300)
+lr=(0.00001)
+wd=(0.00001)
+activator="PReLU"
+if_rand="False"
+
+hid_units=(1024)
+sample_size=(1024)
+feature_signal_dim=(1024)
+
+losslam_ssl=(1)
+losslam_sig_cross=(200)
+losslam_ssl_pos=(0.1)
+num_hop=(0)
+
+
+python Train_SSL.py \
+    --dataset $dataset \
+    --datadir $datadir \
+    --log_dir $log_dir \
+    --GPU_ID $GPU_ID \
+    --seed $seed \
+    --nb_epochs $nb_epochs \
+    --lr $lr \
+    --wd $wd   \
+    --activator $activator  \
+    --if_rand $if_rand   \
+    --hid_units $hid_units   \
+    --sample_size $sample_size   \
+    --feature_signal_dim $feature_signal_dim   \
+    --losslam_ssl $losslam_ssl   \
+    --losslam_sig_cross $losslam_sig_cross   \
+    --losslam_ssl_pos $losslam_ssl_pos   \
+    --num_hop $num_hop   

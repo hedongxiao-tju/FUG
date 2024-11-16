@@ -1,0 +1,183 @@
+train_dataset="Cora"
+test_dataset="Cora,CiteSeer,PubMed,Photo,Computers,CS,Physics"
+datadir="../../datasets/"
+log_dir="./log/logall_train_test.txt"
+GPU_ID=(0)
+seed=(66666)
+
+nb_epochs=(500)
+lr=(0.00001)
+wd=(0.00001)
+activator=("PReLU")
+if_rand="False"
+
+hid_units=(1024)
+sample_size=(1024)
+feature_signal_dim=(1024)
+
+losslam_ssl=(1)
+losslam_sig_cross=(200)
+losslam_ssl_pos=(0.5)
+num_hop="3,5,0,0,0,0,0"
+
+
+python Train_TransL.py \
+    --train_dataset $train_dataset \
+    --test_dataset $test_dataset \
+    --datadir $datadir \
+    --log_dir $log_dir \
+    --GPU_ID $GPU_ID \
+    --seed $seed \
+    --nb_epochs $nb_epochs \
+    --lr $lr \
+    --wd $wd   \
+    --activator $activator  \
+    --if_rand $if_rand   \
+    --hid_units $hid_units   \
+    --sample_size $sample_size   \
+    --feature_signal_dim $feature_signal_dim   \
+    --losslam_ssl $losslam_ssl   \
+    --losslam_sig_cross $losslam_sig_cross   \
+    --losslam_ssl_pos $losslam_ssl_pos   \
+    --num_hop $num_hop   
+
+
+train_dataset="CiteSeer"
+test_dataset="Cora,CiteSeer,PubMed,Photo,Computers,CS,Physics"
+
+python Train_TransL.py \
+    --train_dataset $train_dataset \
+    --test_dataset $test_dataset \
+    --datadir $datadir \
+    --log_dir $log_dir \
+    --GPU_ID $GPU_ID \
+    --seed $seed \
+    --nb_epochs $nb_epochs \
+    --lr $lr \
+    --wd $wd   \
+    --activator $activator  \
+    --if_rand $if_rand   \
+    --hid_units $hid_units   \
+    --sample_size $sample_size   \
+    --feature_signal_dim $feature_signal_dim   \
+    --losslam_ssl $losslam_ssl   \
+    --losslam_sig_cross $losslam_sig_cross   \
+    --losslam_ssl_pos $losslam_ssl_pos   \
+    --num_hop $num_hop   
+
+
+train_dataset="PubMed"
+test_dataset="Cora,CiteSeer,PubMed,Photo,Computers,CS,Physics"
+
+python Train_TransL.py \
+    --train_dataset $train_dataset \
+    --test_dataset $test_dataset \
+    --datadir $datadir \
+    --log_dir $log_dir \
+    --GPU_ID $GPU_ID \
+    --seed $seed \
+    --nb_epochs $nb_epochs \
+    --lr $lr \
+    --wd $wd   \
+    --activator $activator  \
+    --if_rand $if_rand   \
+    --hid_units $hid_units   \
+    --sample_size $sample_size   \
+    --feature_signal_dim $feature_signal_dim   \
+    --losslam_ssl $losslam_ssl   \
+    --losslam_sig_cross $losslam_sig_cross   \
+    --losslam_ssl_pos $losslam_ssl_pos   \
+    --num_hop $num_hop   
+
+train_dataset="Photo"
+test_dataset="Cora,CiteSeer,PubMed,Photo,Computers,CS,Physics"
+
+python Train_TransL.py \
+    --train_dataset $train_dataset \
+    --test_dataset $test_dataset \
+    --datadir $datadir \
+    --log_dir $log_dir \
+    --GPU_ID $GPU_ID \
+    --seed $seed \
+    --nb_epochs $nb_epochs \
+    --lr $lr \
+    --wd $wd   \
+    --activator $activator  \
+    --if_rand $if_rand   \
+    --hid_units $hid_units   \
+    --sample_size $sample_size   \
+    --feature_signal_dim $feature_signal_dim   \
+    --losslam_ssl $losslam_ssl   \
+    --losslam_sig_cross $losslam_sig_cross   \
+    --losslam_ssl_pos $losslam_ssl_pos   \
+    --num_hop $num_hop   
+
+train_dataset="Computers"
+test_dataset="Cora,CiteSeer,PubMed,Photo,Computers,CS,Physics"
+
+python Train_TransL.py \
+    --train_dataset $train_dataset \
+    --test_dataset $test_dataset \
+    --datadir $datadir \
+    --log_dir $log_dir \
+    --GPU_ID $GPU_ID \
+    --seed $seed \
+    --nb_epochs $nb_epochs \
+    --lr $lr \
+    --wd $wd   \
+    --activator $activator  \
+    --if_rand $if_rand   \
+    --hid_units $hid_units   \
+    --sample_size $sample_size   \
+    --feature_signal_dim $feature_signal_dim   \
+    --losslam_ssl $losslam_ssl   \
+    --losslam_sig_cross $losslam_sig_cross   \
+    --losslam_ssl_pos $losslam_ssl_pos   \
+    --num_hop $num_hop   
+
+train_dataset="CS"
+test_dataset="Cora,CiteSeer,PubMed,Photo,Computers,CS,Physics"
+
+python Train_TransL.py \
+    --train_dataset $train_dataset \
+    --test_dataset $test_dataset \
+    --datadir $datadir \
+    --log_dir $log_dir \
+    --GPU_ID $GPU_ID \
+    --seed $seed \
+    --nb_epochs $nb_epochs \
+    --lr $lr \
+    --wd $wd   \
+    --activator $activator  \
+    --if_rand $if_rand   \
+    --hid_units $hid_units   \
+    --sample_size $sample_size   \
+    --feature_signal_dim $feature_signal_dim   \
+    --losslam_ssl $losslam_ssl   \
+    --losslam_sig_cross $losslam_sig_cross   \
+    --losslam_ssl_pos $losslam_ssl_pos   \
+    --num_hop $num_hop   
+
+
+train_dataset="Physics"
+test_dataset="Cora,CiteSeer,PubMed,Photo,Computers,CS,Physics"
+
+python Train_TransL.py \
+    --train_dataset $train_dataset \
+    --test_dataset $test_dataset \
+    --datadir $datadir \
+    --log_dir $log_dir \
+    --GPU_ID $GPU_ID \
+    --seed $seed \
+    --nb_epochs $nb_epochs \
+    --lr $lr \
+    --wd $wd   \
+    --activator $activator  \
+    --if_rand $if_rand   \
+    --hid_units $hid_units   \
+    --sample_size $sample_size   \
+    --feature_signal_dim $feature_signal_dim   \
+    --losslam_ssl $losslam_ssl   \
+    --losslam_sig_cross $losslam_sig_cross   \
+    --losslam_ssl_pos $losslam_ssl_pos   \
+    --num_hop $num_hop   
